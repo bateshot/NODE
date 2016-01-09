@@ -1,0 +1,14 @@
+extends layout
+
+block mainContent
+    div
+        h1 Smartphones
+
+        div(class='row')
+            each phone in phones
+                div(class='col-md-4')
+                    h2= phone.name
+                    h3= 'Price: ' + phone.price + ' from '
+                        span(style='text-decoration: line-through;')=phone.price * 1.2
+                    img(src='http://2computerguys.com/images/Generic-Mini-S3-4-Wifi-Bluetooth-Fm-Smartphone-Android-Smartphone-GreyGold-CityMP-10-10-0087.jpg' class='img-responsive center-block')
+                    p= description.generic

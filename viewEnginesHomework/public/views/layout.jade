@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    title Mobile Heaven
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+body
+    div(class='container')
+        h1 MOBILE HEAVEN
+        h2 Top gadgets store
+        nav(class='navbar navbar-default')
+            ul(class='nav navbar-nav')
+                li
+                    a(href='/') home
+                li
+                    a(href='/smartphones') smartphones
+                li
+                    a(href='/tablets') tablets
+                li
+                    a(href='/wearables') wearables
+
+        div#root
+            block mainContent
+
+    script(type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js')
+    script(type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    footer(style='text-align: center;')
+        h3(class='footer') &copy; Footer goes here!

@@ -1,0 +1,15 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "busboy": "^0.2.12",
+    "guid": "0.0.12"
+  }
+}

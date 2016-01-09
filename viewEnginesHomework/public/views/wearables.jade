@@ -1,0 +1,14 @@
+extends layout
+
+block mainContent
+    div
+        h1 Wearables
+
+        div(class='row')
+            each wear in wearables
+                div(class='col-md-4')
+                    h2= wear.name
+                    h3= 'Price: ' + wear.price + ' from '
+                        span(style='text-decoration: line-through;')=wear.price * 1.2
+                    img(src='http://ecx.images-amazon.com/images/I/51q0H5fQzGL._SX425_.jpg' class='img-responsive center-block')
+                    p= description.generic

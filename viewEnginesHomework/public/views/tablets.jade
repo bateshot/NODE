@@ -1,0 +1,14 @@
+extends layout
+
+block mainContent
+    div
+        h1 Tablets
+
+        div(class='row')
+            each tablet in tablets
+                div(class='col-md-4')
+                    h2= tablet.name
+                    h3= 'Price: ' + tablet.price + ' from '
+                        span(style='text-decoration: line-through;')=tablet.price * 1.2
+                    img(src='http://imgsrv.worldstart.net/images/ct-images/2013/10/nexus-10-450x332.png' class='img-responsive center-block')
+                    p= description.generic
